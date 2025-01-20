@@ -1,7 +1,7 @@
 /* Estilo general */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f4f8;
+    background: linear-gradient(135deg, #f7c6c2 0%, #f7d8e3 100%); /* Fondo en tonos rosados y suaves */
     margin: 0;
     padding: 20px;
     display: flex;
@@ -9,35 +9,65 @@ body {
     align-items: center;
     min-height: 100vh;
     flex-wrap: wrap;
+    color: #4b4b4b; /* Color de texto suave */
+}
+
+
+
+.song-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Si quieres bordes redondeados */
   }
   
-  /* Contenedor de las tarjetas */
-  .card-container {
+
+/* Estilo para el título */
+.title-container {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .main-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff7c7c; /* Color cálido y romántico */
+  }
+  
+  .message {
+    font-size: 1.2rem;
+    color: #4b4b4b; /* Color suave para el mensaje */
+    margin-top: 10px;
+  }
+  
+
+/* Contenedor de las tarjetas */
+.card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     width: 100%;
     max-width: 1200px;
-  }
-  
-  /* Estilo de las tarjetas */
-  .card {
+}
+
+/* Estilo de las tarjetas */
+.card {
     perspective: 1000px;
     cursor: pointer;
-  }
-  
-  .card-inner {
-    width: 200px;
-    height: 300px;
+}
+
+.card-inner {
+    width: 250px;
+    height: 350px;
     position: relative;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-  }
-  
-  .card-front,
-  .card-back {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background: linear-gradient(135deg, #f7c6c2, #ffb6b3); /* Fondo suave y romántico */
+}
+
+.card-front,
+.card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -45,42 +75,98 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 15px;
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
-  }
-  
-  /* Frente de la tarjeta */
-  .card-front {
-    background-color: #007bff;
+}
+
+/* Frente de la tarjeta */
+.card-front {
+    background-color: #ff7c7c; /* Color suave y cálido */
     color: white;
-    font-size: 1.2rem;
-  }
-  
-  /* Reverso de la tarjeta */
-  .card-back {
-    background-color: #ffcc00;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* Reverso de la tarjeta */
+.card-back {
+    background-color: #ffafcc; /* Rosa claro */
     color: #333;
     transform: rotateY(180deg);
-    font-size: 1rem;
+    font-size: 1.1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  /* Estilo del botón Cerrar */
-  #closeBtn {
-    background-color: #ff3333;
+}
+
+/* Estilo del botón Cerrar */
+#closeBtn {
+    background-color: #f44336; /* Rojo brillante */
     color: white;
     border: none;
-    padding: 10px;
+    padding: 12px 20px;
     cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  #closeBtn:hover {
-    background-color: #cc0000;
-  }
-  
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#closeBtn:hover {
+    background-color: #d32f2f; /* Rojo oscuro */
+}
+
+/* Posicionamiento y estilo de la mandarina */
+.mandarina-container {
+    position: fixed;
+    bottom: 30px; /* Colocamos la mandarina en la esquina inferior */
+    right: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.mandarina-container:hover {
+    transform: scale(1.1); /* Un pequeño efecto de aumento cuando se pasa el ratón */
+}
+
+.mandarina {
+    width: 60px;
+    height: 60px;
+}
+
+/* Estilo de la lluvia de mandarinas */
+.mandarinas-rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh); /* Caer hasta el final de la pantalla */
+    }
+}
+
+.falling-mandarina {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    opacity: 0.9;
+    animation: fall 2s ease-in forwards;
+    animation-delay: var(--delay); /* Retraso aleatorio para la caída */
+}
+
+/* Fondo adicional y detalles */
+body {
+    background: linear-gradient(135deg, #f7c6c2 0%, #f7d8e3 100%); /* Gradiente suave y cálido */
+    background-size: cover;
+}
+
+/* Detalle de bordes y sombras en las tarjetas */
+.card-container {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra más suave para dar profundidad */
+}
