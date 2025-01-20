@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjeta Musical</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="card-container">
+    <!-- Tarjetas con música y letra -->
+    <div class="card" data-lyric="♪ Aquí va la letra de la primera canción ♪" data-music="es_verdad.mp3">
+      <div class="card-inner">
+        <div class="card-front">
+          <h2>Haz clic para abrir</h2>
+        </div>
+        <div class="card-back">
+          <h2>♪ Aquí va la letra de la primera canción ♪</h2>
+          <button class="closeBtn">Cerrar</button> <!-- Usamos class en vez de id -->
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-lyric="♪ Aquí va la letra de la segunda canción ♪" data-music="ColdMan.mp3">
+      <div class="card-inner">
+        <div class="card-front">
+          <h2>Haz clic para abrir</h2>
+        </div>
+        <div class="card-back">
+          <h2>♪ Aquí va la letra de la segunda canción ♪</h2>
+          <button class="closeBtn">Cerrar</button> <!-- Usamos class en vez de id -->
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-lyric="♪ Aquí va la letra de la tercera canción ♪" data-music="song3.mp3">
+      <div class="card-inner">
+        <div class="card-front">
+          <h2>Haz clic para abrir</h2>
+        </div>
+        <div class="card-back">
+          <h2>♪ Aquí va la letra de la tercera canción ♪</h2>
+          <button class="closeBtn">Cerrar</button> <!-- Usamos class en vez de id -->
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-lyric="♪ Aquí va la letra de la cuarta canción ♪" data-music="song4.mp3">
+      <div class="card-inner">
+        <div class="card-front">
+          <h2>Haz clic para abrir</h2>
+        </div>
+        <div class="card-back">
+          <h2>♪ Aquí va la letra de la cuarta canción ♪</h2>
+          <button class="closeBtn">Cerrar</button> <!-- Usamos class en vez de id -->
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-lyric="♪ Aquí va la letra de la quinta canción ♪" data-music="song5.mp3">
+      <div class="card-inner">
+        <div class="card-front">
+          <h2>Haz clic para abrir</h2>
+        </div>
+        <div class="card-back">
+          <h2>♪ Aquí va la letra de la quinta canción ♪</h2>
+          <button class="closeBtn">Cerrar</button> <!-- Usamos class en vez de id -->
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-lyric="♪ Aquí va la letra de la sexta canción ♪" data-music="song6.mp3">
+      <div class="card-inner">
+        <div class="card-front">
+          <h2>Haz clic para abrir</h2>
+        </div>
+        <div class="card-back">
+          <h2>♪ Aquí va la letra de la sexta canción ♪</h2>
+          <button class="closeBtn">Cerrar</button> <!-- Usamos class en vez de id -->
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-lyric="♪ Aquí va la letra de la séptima canción ♪" data-music="song7.mp3">
+      <div class="card-inner">
+        <div class="card-front">
+          <h2>Haz clic para abrir</h2>
+        </div>
+        <div class="card-back">
+          <h2>♪ Aquí va la letra de la séptima canción ♪</h2>
+          <button class="closeBtn">Cerrar</button> <!-- Usamos class en vez de id -->
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-lyric="♪ Aquí va la letra de la octava canción ♪" data-music="song8.mp3">
+      <div class="card-inner">
+        <div class="card-front">
+          <h2>Haz clic para abrir</h2>
+        </div>
+        <div class="card-back">
+          <h2>♪ Aquí va la letra de la octava canción ♪</h2>
+          <button class="closeBtn">Cerrar</button> <!-- Usamos class en vez de id -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Elemento para reproducir música -->
+  <audio id="audioPlayer"></audio>
+  
+  <script src="script.js"></script>
+</body>
+</html>
