@@ -206,8 +206,3 @@ body {
     }
   }
   
-  /* Animación de cada canción con un tiempo diferente */
-  .rain:nth-child(1) { animation-duration: 5s; }
-  .rain:nth-child(2) { animation-duration: 6s; }
-  .rain:nth-child(3) { animation-duration: 7s; }
-  
