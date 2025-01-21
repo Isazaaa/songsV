@@ -69,3 +69,5 @@ document.getElementById('mandarina').addEventListener('click', () => {
     mandarinasRain.innerHTML = '';
   }, 2000); // Tiempo de la animación
 });
+
+

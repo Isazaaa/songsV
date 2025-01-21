@@ -66,6 +66,8 @@ body {
     background: linear-gradient(135deg, #f7c6c2, #ffb6b3); /* Fondo suave y romántico */
 }
 
+
+
 .card-front,
 .card-back {
     position: absolute;
@@ -170,3 +172,42 @@ body {
 .card-container {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra más suave para dar profundidad */
 }
+
+
+
+.rain-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .rain {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: white;
+    opacity: 0;
+    animation: fall 3s linear infinite;
+  }
+  
+  @keyframes fall {
+    0% {
+      top: -50px;
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      top: 100vh;
+      opacity: 0;
+    }
+  }
+  
+  /* Animación de cada canción con un tiempo diferente */
+  .rain:nth-child(1) { animation-duration: 5s; }
+  .rain:nth-child(2) { animation-duration: 6s; }
+  .rain:nth-child(3) { animation-duration: 7s; }
+  
