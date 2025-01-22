@@ -1,7 +1,7 @@
 /* Estilo general */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #f7c6c2 0%, #f7d8e3 100%); /* Fondo en tonos rosados y suaves */
+    background: linear-gradient(135deg, #f7c6c6 0%, #f2a7a7 100%); /* Fondo en rojo pastel */
     margin: 0;
     padding: 20px;
     display: flex;
@@ -12,33 +12,29 @@ body {
     color: #4b4b4b; /* Color de texto suave */
 }
 
-
-
 .song-image {
     width: 100%;
     height: auto;
     border-radius: 8px; /* Si quieres bordes redondeados */
-  }
-  
+}
 
 /* Estilo para el título */
 .title-container {
     text-align: center;
     margin-bottom: 30px;
-  }
-  
-  .main-title {
+}
+
+.main-title {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #ff7c7c; /* Color cálido y romántico */
-  }
-  
-  .message {
+    color: #a73232; /* Rojo oscuro */
+}
+
+.message {
     font-size: 1.2rem;
     color: #4b4b4b; /* Color suave para el mensaje */
     margin-top: 10px;
-  }
-  
+}
 
 /* Contenedor de las tarjetas */
 .card-container {
@@ -63,10 +59,8 @@ body {
     transform-style: preserve-3d;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    background: linear-gradient(135deg, #f7c6c2, #ffb6b3); /* Fondo suave y romántico */
+    background: linear-gradient(135deg, #d65a5a, #a73232); /* Rojo oscuro para las tarjetas */
 }
-
-
 
 .card-front,
 .card-back {
@@ -85,7 +79,7 @@ body {
 
 /* Frente de la tarjeta */
 .card-front {
-    background-color: #ff7c7c; /* Color suave y cálido */
+    background-color: #c74242; /* Rojo medio */
     color: white;
     font-size: 1.4rem;
     font-weight: 600;
@@ -93,8 +87,8 @@ body {
 
 /* Reverso de la tarjeta */
 .card-back {
-    background-color: #ffafcc; /* Rosa claro */
-    color: #333;
+    background-color: #e57373; /* Rojo claro */
+    color: #fff0f0; /* Texto claro */
     transform: rotateY(180deg);
     font-size: 1.1rem;
     display: flex;
@@ -105,7 +99,7 @@ body {
 
 /* Estilo del botón Cerrar */
 #closeBtn {
-    background-color: #f44336; /* Rojo brillante */
+    background-color: #a73232; /* Rojo oscuro */
     color: white;
     border: none;
     padding: 12px 20px;
@@ -116,7 +110,7 @@ body {
 }
 
 #closeBtn:hover {
-    background-color: #d32f2f; /* Rojo oscuro */
+    background-color: #8b2828; /* Rojo aún más oscuro */
 }
 
 /* Posicionamiento y estilo de la mandarina */
@@ -164,7 +158,7 @@ body {
 
 /* Fondo adicional y detalles */
 body {
-    background: linear-gradient(135deg, #f7c6c2 0%, #f7d8e3 100%); /* Gradiente suave y cálido */
+    background: linear-gradient(135deg, #f7c6c6 0%, #f2a7a7 100%); /* Gradiente en tonos de rojo pastel */
     background-size: cover;
 }
 
@@ -172,37 +166,3 @@ body {
 .card-container {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra más suave para dar profundidad */
 }
-
-
-
-.rain-container {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-  }
-  
-  .rain {
-    position: absolute;
-    top: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 20px;
-    color: white;
-    opacity: 0;
-    animation: fall 3s linear infinite;
-  }
-  
-  @keyframes fall {
-    0% {
-      top: -50px;
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      top: 100vh;
-      opacity: 0;
-    }
-  }
-  
