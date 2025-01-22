@@ -53,7 +53,7 @@ document.getElementById('mandarina').addEventListener('click', () => {
   // Generar mandarinas
   for (let i = 0; i < 20; i++) { // Puedes ajustar el número de mandarinas
     const mandarina = document.createElement('img');
-    mandarina.src = 'mandarina.png'; // Ruta de la imagen de mandarina
+    mandarina.src = 'public/mandarina.png'; // Ruta de la imagen de mandarina
     mandarina.classList.add('falling-mandarina');
     mandarina.style.left = `${Math.random() * 100}vw`; // Posición aleatoria en el eje X
     mandarinasRain.appendChild(mandarina);

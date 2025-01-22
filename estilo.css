@@ -1,7 +1,7 @@
 /* Estilo general */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #e3d7f3 0%, #d9c5f2 100%); /* Fondo en morado pastel */
+    background: linear-gradient(135deg, #f7c6c6 0%, #f2a7a7 100%); /* Fondo en rojo pastel */
     margin: 0;
     padding: 20px;
     display: flex;
@@ -40,7 +40,7 @@ body {
 .main-title {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #5a3a90; /* Morado más oscuro */
+    color: #a73232; /* Rojo oscuro */
 }
 
 .message {
@@ -72,7 +72,7 @@ body {
     transform-style: preserve-3d;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    background: linear-gradient(135deg, #a17db7, #735f91); /* Morado oscuro para las tarjetas */
+    background: linear-gradient(135deg, #d65a5a, #a73232); /* Rojo oscuro para las tarjetas */
 }
 
 .card-front,
@@ -92,7 +92,7 @@ body {
 
 /* Frente de la tarjeta */
 .card-front {
-    background-color: #6f4e8b; /* Morado medio */
+    background-color: #c74242; /* Rojo medio */
     color: white;
     font-size: 1.4rem;
     font-weight: 600;
@@ -100,8 +100,8 @@ body {
 
 /* Reverso de la tarjeta */
 .card-back {
-    background-color: #8a5ea6; /* Morado ligeramente más claro */
-    color: #f3e8ff; /* Texto claro */
+    background-color: #e57373; /* Rojo claro */
+    color: #fff0f0; /* Texto claro */
     transform: rotateY(180deg);
     font-size: 1.1rem;
     display: flex;
@@ -112,7 +112,7 @@ body {
 
 /* Estilo del botón Cerrar */
 #closeBtn {
-    background-color: #5a3a90; /* Morado oscuro */
+    background-color: #a73232; /* Rojo oscuro */
     color: white;
     border: none;
     padding: 12px 20px;
@@ -123,7 +123,7 @@ body {
 }
 
 #closeBtn:hover {
-    background-color: #4c3278; /* Morado aún más oscuro */
+    background-color: #8b2828; /* Rojo aún más oscuro */
 }
 
 /* Posicionamiento y estilo de la mandarina */
@@ -171,7 +171,7 @@ body {
 
 /* Fondo adicional y detalles */
 body {
-    background: linear-gradient(135deg, #e3d7f3 0%, #d9c5f2 100%); /* Gradiente en tonos de morado pastel */
+    background: linear-gradient(135deg, #f7c6c6 0%, #f2a7a7 100%); /* Gradiente en tonos de rojo pastel */
     background-size: cover;
 }
 
