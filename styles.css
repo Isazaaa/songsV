@@ -13,6 +13,7 @@ body {
 }
 
 
+
 .change-image {
     width: 100px; /* Ajusta el tamaño de la imagen */
     cursor: pointer;
@@ -23,6 +24,32 @@ body {
     transform: scale(1.1); /* Efecto al pasar el mouse */
   }
   
+
+
+/* Estilo para el botón flotante */
+.flower-button {
+    position: fixed; /* Lo mantiene fijo en la pantalla */
+    left: 10px; /* A 10px desde el borde izquierdo de la pantalla */
+    top: 50%; /* A la mitad de la pantalla (verticalmente) */
+    transform: translateY(-50%); /* Centrado verticalmente */
+    background-color: transparent; /* Sin fondo */
+    border: none; /* Sin borde */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    transition: transform 0.3s ease-in-out; /* Transición suave al hacer hover */
+  }
+  
+  /* Estilo de la imagen de la flor */
+  .flower-icon {
+    width: 50px; /* Ajusta el tamaño de la flor */
+    height: 50px; /* Ajusta el tamaño de la flor */
+    border-radius: 50%; /* Hace que sea redonda */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Agrega sombra */
+  }
+  
+  /* Efecto de hover para el botón */
+  .flower-button:hover .flower-icon {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+  }
 
 
 .song-image {
