@@ -1,190 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tarjeta Musical</title>
-  <link rel="icon" href="public/Cinnamoroll.png" type="image/x-icon">
-  <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@latest/dist/driver.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
-  <div class="title-container">
-    <h1 class="main-title">Canciones para usted sapita</h1>
-    
-  </div>
-
-   <!-- Imagen para cambiar contenido -->
-   <div class="change-image">
-    <a href="eng.html">
-      <img src="public/Cinnamoroll.png" alt="Cambiar contenido" class="change-image">
-    </a>
-  </div>
-
-  <div class="card-container">
-    <!-- Tarjetas con música y letra -->
-    <div class="card" data-music="public/vivo.mp3">
-      <div class="card-inner">
-        <div class="card-front">
-          <h2>Haz clic para abrir</h2>
-        </div>
-        <div class="card-back">
-          <img src="https://i.pinimg.com/736x/bf/ab/01/bfab0163d3ac22249e7ea10dd30e8dbb.jpg" alt="Imagen de la primera canción" class="song-image">
-          <button class="closeBtn"></button> <!-- Usamos class en vez de id -->
-        </div>
-      </div>
+    <div class="container">
+        <button id="toggleDarkMode" class="floating-button">
+            <i class="ri-sun-line"></i>
+        </button>
+        <h1 class="titulo-sesion">¡Bienvenida!</h1>
+        <p>Ingresa </p>
+        <form id="loginForm">
+            <label for="anniversaryDate">Fecha de cuandos nos conocimos:</label>
+            <input type="date" id="anniversaryDate" required><br>
+            <button type="submit">
+                <!-- SVG para el botón de ingreso -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" color="#ffffff" fill="none">
+                    <path d="M11 3L10.3374 3.23384C7.75867 4.144 6.46928 4.59908 5.73464 5.63742C5 6.67576 5 8.0431 5 10.7778V13.2222C5 15.9569 5 17.3242 5.73464 18.3626C6.46928 19.4009 7.75867 19.856 10.3374 20.7662L11 21" 
+                          stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M21 12L11 12M21 12C21 11.2998 19.0057 9.99153 18.5 9.5M21 12C21 12.7002 19.0057 14.0085 18.5 14.5" 
+                          stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg> Ingresar
+            </button>
+        </form>
+        <p id="errorMessage" class="hidden">Fecha incorrecta!<br>
+          uuu lo olvido zunguita?😢<br>
+             Vuelve a intentarlo!!.</p>
     </div>
 
-    <div class="card" data-music="public/locos.mp3">
-      <div class="card-inner">
-        <div class="card-front">
-          <h2>Haz clic para abrir</h2>
-        </div>
-        <div class="card-back">
-          <img src="https://i.pinimg.com/736x/53/18/42/53184237eba0ae435504cff3abed36e3.jpg" alt="Imagen de la segunda canción" class="song-image">
-          <button class="closeBtn"></button>
-        </div>
-      </div>
-    </div>
-
-    <div class="card" data-music="public/Vilo.mp3">
-      <div class="card-inner">
-        <div class="card-front">
-          <h2>Haz clic para abrir</h2>
-        </div>
-        <div class="card-back">
-          <img src="https://i.pinimg.com/736x/84/4c/9c/844c9c0e9212af8368b8d81d92caa372.jpg" alt="Imagen de la tercera canción" class="song-image">
-          <button class="closeBtn"></button>
-        </div>
-      </div>
-    </div>
-
-    <div class="card" data-music="public/es_verdad.mp3">
-      <div class="card-inner">
-        <div class="card-front">
-          <h2>Haz clic para abrir</h2>
-        </div>
-        <div class="card-back">
-          <img src="https://i.pinimg.com/736x/7d/7f/1a/7d7f1a758631eb9bcc7cda278898a7e1.jpg" alt="Imagen de la cuarta canción" class="song-image">
-          <button class="closeBtn"></button>
-        </div>
-      </div>
-    </div>
-
-    <div class="card" data-music="public/cuco.mp3">
-      <div class="card-inner">
-        <div class="card-front">
-          <h2>Haz clic para abrir</h2>
-        </div>
-        <div class="card-back">
-          <img src="public/cina.jpg" alt="Imagen de la quinta canción" class="song-image">
-          <button class="closeBtn"></button>
-        </div>
-      </div>
-    </div>
-
-    <div class="card" data-music="public/vuelta.mp3">
-      <div class="card-inner">
-        <div class="card-front">
-          <h2>Haz clic para abrir</h2>
-        </div>
-        <div class="card-back">
-          <img src="https://i.pinimg.com/736x/31/8a/db/318adb75196a8d06b2a4308417f1d166.jpg" alt="Imagen de la sexta canción" class="song-image">
-          <button class="closeBtn"></button>
-        </div>
-      </div>
-    </div>
-
-    <div class="card" data-music="public/spinetta.mp3">
-      <div class="card-inner">
-        <div class="card-front">
-          <h2>Haz clic para abrir</h2>
-        </div>
-        <div class="card-back">
-          <img src="https://i.pinimg.com/736x/80/3c/a2/803ca2f0b5f805fa39793f3a52e6f59c.jpg" alt="Imagen de la séptima canción" class="song-image">
-          <button class="closeBtn"></button>
-        </div>
-      </div>
-    </div>
-
-    <div class="card" data-music="public/canibales.mp3">
-      <div class="card-inner">
-        <div class="card-front">
-          <h2>Haz clic para abrir</h2>
-        </div>
-        <div class="card-back">
-          <img src="https://i.pinimg.com/736x/66/39/e7/6639e7e639d8c97f0ed4e0684652dda2.jpg" alt="Imagen de la octava canción" class="song-image">
-          <button class="closeBtn"></button>
-        </div>
-      </div>
-    </div>
-
-    <div class="card" data-music="public/mirando.mp3">
-      <div class="card-inner">
-        <div class="card-front">
-          <h2>Haz clic para abrir</h2>
-        </div>
-        <div class="card-back">
-          <img src="https://i.pinimg.com/736x/ba/a7/23/baa723c6d6cfa66d5906691fca16ae79.jpg" alt="Imagen de la novena canción" class="song-image">
-          <button class="closeBtn"></button>
-        </div>
-      </div>
-    </div>
-
-    <div class="card" data-music="public/venus.mp3">
-      <div class="card-inner">
-        <div class="card-front">
-          <h2>Haz clic para abrir</h2>
-        </div>
-        <div class="card-back">
-          <img src="https://i.pinimg.com/736x/17/50/e6/1750e6e4e7e34cff4cd8f5d705cfb1f4.jpg" alt="Imagen de la décima canción" class="song-image">
-          <button class="closeBtn"></button>
-        </div>
-      </div>
-    </div>
-
-    <div class="card" data-music="public/lleves.mp3">
-      <div class="card-inner">
-        <div class="card-front">
-          <h2>Haz clic para abrir</h2>
-        </div>
-        <div class="card-back">
-          <img src="https://i.pinimg.com/736x/e7/ae/8c/e7ae8cd2ab573f6bc4f9ac6b69daefde.jpg" alt="Imagen de la undécima canción" class="song-image">
-          <button class="closeBtn"></button>
-        </div>
-      </div>
-    </div>
-
-    <div class="card" data-music="public/californica.mp3">
-      <div class="card-inner">
-        <div class="card-front">
-          <h2>Haz clic para abrir</h2>
-        </div>
-        <div class="card-back">
-          <img src="https://i.pinimg.com/736x/7f/15/8c/7f158c0ddc5d7a9d084ca4c440c39198.jpg" alt="Imagen de la duodécima canción" class="song-image">
-          <button class="closeBtn"></button>
-        </div>
-      </div>
-    </div>
-
-  <!-- Botón flotante con imagen de flor -->
-  <a href="flores.html" class="flower-button">
-    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fff15ea5-5017-48f3-862d-73bfb10abd75/d4qd6cf-c439c09e-3457-41ed-a54b-54c6eaedab38.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZmZjE1ZWE1LTUwMTctNDhmMy04NjJkLTczYmZiMTBhYmQ3NVwvZDRxZDZjZi1jNDM5YzA5ZS0zNDU3LTQxZWQtYTU0Yi01NGM2ZWFlZGFiMzgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.LlQJnULxf-fYgc7ZUBw7Xe1rs1bYEDGVJS4B1Zu4lUc" alt="Flor" class="flower-icon">
-  </a>
-  
-  </div>
-
-
-
-  <div class="mandarina-container">
-    <img src="public/mandarina.png" alt="Mandarina" class="mandarina" id="mandarina">
-  </div>
-  <div class="mandarinas-rain"></div>
-
-  
-
-  <!-- Elemento para reproducir música -->
-  <audio id="audioPlayer"></audio>
-
-  <script src="script.js"></script>
+    <script src="https://unpkg.com/driver.js/dist/driver.js.iife.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
