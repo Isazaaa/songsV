@@ -618,6 +618,7 @@ main {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+
 /*seccion nuestras fotos - colage*/
 .collage-container {
     display: grid;
@@ -625,7 +626,6 @@ main {
     gap: 10px;
     padding: 20px;
     background-color: var(--color-background); /* Fondo del contenedor */
-    
 }
 
 .collage-item {
@@ -634,7 +634,6 @@ main {
     border-radius: var(--border-radius); /* Bordes curvos */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border: 1px solid var(--color-border); /* Borde del collage */
-    overflow: hidden;  /* Oculta las partes que se excedan del contenedor */
 }
 
 .collage-item img {
@@ -664,40 +663,7 @@ main {
     opacity: 1;
 }
 
-/* Estilos adicionales para modo oscuro */
-.dark-mode .collage-item {
-    border-color: var(--color-border); /* Borde en modo oscuro */
-}
 
-.dark-mode .overlay {
-    background: rgba(0, 0, 0, 0.8); /* Overlay más oscuro en modo oscuro */
-}
-
-.music-collage {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.collage-images {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.collage-images img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.collage-images img:hover {
-    transform: scale(1.1);
-}
 
 /* Estilos para la tarjeta de música */
 .music-container{
