@@ -163,7 +163,11 @@ const mensajes = [
   "hola",
   "cabezona", 
   "besos",
-  "te quiero"
+  "te quiero", 
+  "bebesauria",
+  "boff",
+  "linda",
+  
  /*    "Eres mi razón de sonreír cada día. 💖",
     "Contigo, cada momento es especial. 🌟",
     "Tu amor es mi mayor tesoro. 🏆",

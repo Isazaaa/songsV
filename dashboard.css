@@ -369,7 +369,17 @@ main {
     padding: 20px;
 }
 
-.gallery-item {
+
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    
+    display: block;
+    border-radius: var(--border-radius);
+}
+
+
+/* .gallery-item {
     position: relative;
     overflow: hidden;
     border-radius: var(--border-radius);
@@ -406,7 +416,7 @@ main {
 .gallery-item:hover .gallery-description {
     bottom: 0;
 }
-
+ */
 /* Estilos generales para la sección */
 #recuerdos {
     padding: 2rem;
