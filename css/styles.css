@@ -1,7 +1,7 @@
 /* Estilo general */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #f7c6c6 0%, #f2a7a7 100%); /* Fondo en rojo pastel */
+    background: linear-gradient(135deg, #e3d7f3 0%, #d9c5f2 100%); /* Fondo en morado pastel */
     margin: 0;
     padding: 20px;
     display: flex;
@@ -11,6 +11,7 @@ body {
     flex-wrap: wrap;
     color: #4b4b4b; /* Color de texto suave */
 }
+
 
 
 .change-image {
@@ -24,11 +25,13 @@ body {
   }
   
 
+
 /* Estilo para el botón flotante */
 .flower-button {
     position: fixed; /* Lo mantiene fijo en la pantalla */
     left: 10px; /* A 10px desde el borde izquierdo de la pantalla */
-    bottom: 10px; /* A 10px desde el borde inferior de la pantalla */
+    top: 50%; /* A la mitad de la pantalla (verticalmente) */
+    transform: translateY(-50%); /* Centrado verticalmente */
     background-color: transparent; /* Sin fondo */
     border: none; /* Sin borde */
     z-index: 1000; /* Asegura que esté por encima de otros elementos */
@@ -37,8 +40,8 @@ body {
   
   /* Estilo de la imagen de la flor */
   .flower-icon {
-    width: 40px; /* Tamaño más pequeño */
-    height: 40px; /* Tamaño más pequeño */
+    width: 50px; /* Ajusta el tamaño de la flor */
+    height: 50px; /* Ajusta el tamaño de la flor */
     border-radius: 50%; /* Hace que sea redonda */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Agrega sombra */
   }
@@ -47,14 +50,11 @@ body {
   .flower-button:hover .flower-icon {
     transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
   }
-  
 
-
-  
 
 .song-image {
     width: 100%;
-    height: auto;
+    height: 200px;
     border-radius: 8px; /* Si quieres bordes redondeados */
 }
 
@@ -67,7 +67,7 @@ body {
 .main-title {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #a73232; /* Rojo oscuro */
+    color: #5a3a90; /* Morado más oscuro */
 }
 
 .message {
@@ -99,7 +99,7 @@ body {
     transform-style: preserve-3d;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    background: linear-gradient(135deg, #d65a5a, #a73232); /* Rojo oscuro para las tarjetas */
+    background: linear-gradient(135deg, #a17db7, #735f91); /* Morado oscuro para las tarjetas */
 }
 
 .card-front,
@@ -119,7 +119,7 @@ body {
 
 /* Frente de la tarjeta */
 .card-front {
-    background-color: #c74242; /* Rojo medio */
+    background-color: #6f4e8b; /* Morado medio */
     color: white;
     font-size: 1.4rem;
     font-weight: 600;
@@ -127,8 +127,8 @@ body {
 
 /* Reverso de la tarjeta */
 .card-back {
-    background-color: #e57373; /* Rojo claro */
-    color: #fff0f0; /* Texto claro */
+    background-color: #8a5ea6; /* Morado ligeramente más claro */
+    color: #f3e8ff; /* Texto claro */
     transform: rotateY(180deg);
     font-size: 1.1rem;
     display: flex;
@@ -139,7 +139,7 @@ body {
 
 /* Estilo del botón Cerrar */
 #closeBtn {
-    background-color: #a73232; /* Rojo oscuro */
+    background-color: #5a3a90; /* Morado oscuro */
     color: white;
     border: none;
     padding: 12px 20px;
@@ -150,7 +150,7 @@ body {
 }
 
 #closeBtn:hover {
-    background-color: #8b2828; /* Rojo aún más oscuro */
+    background-color: #4c3278; /* Morado aún más oscuro */
 }
 
 /* Posicionamiento y estilo de la mandarina */
@@ -192,13 +192,13 @@ body {
     width: 50px;
     height: 50px;
     opacity: 0.9;
-    animation: fall 2s ease-in forwards;
+    animation: fall 0.5s ease-in forwards;
     animation-delay: var(--delay); /* Retraso aleatorio para la caída */
 }
 
 /* Fondo adicional y detalles */
 body {
-    background: linear-gradient(135deg, #f7c6c6 0%, #f2a7a7 100%); /* Gradiente en tonos de rojo pastel */
+    background: linear-gradient(135deg, #e3d7f3 0%, #d9c5f2 100%); /* Gradiente en tonos de morado pastel */
     background-size: cover;
 }
 

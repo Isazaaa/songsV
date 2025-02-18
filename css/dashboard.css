@@ -18,13 +18,13 @@
   }
   
   :root {
-    --color-primary: #FF6B81;      /* Un rosa coral vibrante para acentos y botones */
+    --color-primary: #ff2c2c;      /* Un rosa coral vibrante para acentos y botones */
     --color-secondary: #FFD3B6;    /* Un melocotón suave para fondos secundarios y detalles */
     --color-background: #FFFAF3;   /* Un off-white cálido, que da luminosidad y suavidad */
     --color-text: #333333;         /* Un gris oscuro para una legibilidad óptima en textos */
     --color-text-light: #ffffff;   /* Texto claro para contrastar sobre fondos coloridos o primarios */
     --color-border: #FFD3B6;       /* Usamos el tono melocotón para bordes, generando cohesión */
-    --color-error: #FF4D4D;        /* Un rojo suave para mensajes de error sin ser demasiado agresivo */
+    --color-error: #050505;        /* Un rojo suave para mensajes de error sin ser demasiado agresivo */
     --border-radius: 20px;         /* Bordes curvos para un diseño más amable */
 
     --card-bg: #FFFFFF;           /* Fondo de la tarjeta */
@@ -648,10 +648,11 @@ main {
 
 .collage-item img {
     width: 100%;
-    height: auto;
+    height: 300px;
     display: block;
     transition: transform 0.3s ease;
 }
+
 
 .collage-item:hover img {
     transform: scale(1.1);
@@ -931,7 +932,7 @@ audio {
   }
   .card-back img {
     width: 100%;
-    height: auto;
+    height: 250px;
     border-radius: 10px;
   }
   .card-back button.closeBtn {
