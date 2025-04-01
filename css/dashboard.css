@@ -360,22 +360,72 @@ main {
 }
 
 
-
-/*galeria*/
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 15px;
     padding: 20px;
+    place-items: center; /* centra cada imagen en su celda */
 }
-
 
 .gallery-item img {
     width: 100%;
-    height: 300px;
-    
+    height: 480px; /* más pequeña que antes */
+    object-fit: cover; /* llena el espacio sin deformarse */
     display: block;
     border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* opcional, para que resalte */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+#spotify {
+    padding: 2rem;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    border-radius: var(--border-radius);
+    margin: 2rem auto;
+    max-width: 1000px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#spotify h2 {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+#spotify p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: var(--color-text);
+}
+
+.spotify-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.spotify-grid iframe {
+    width: 100%;
+    height: 450px; /* más largo */
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.spotify-grid iframe:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 
